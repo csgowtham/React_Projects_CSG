@@ -34,7 +34,7 @@ const ViewUser = ({data,setData}) => {
             getData(id);
         }
         
-    }, []);
+    }, [getData,id]);
 
     const handleSubmit = ()=>{
         let index = findIndexById(data,Number(id));
